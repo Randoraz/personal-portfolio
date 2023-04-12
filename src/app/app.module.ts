@@ -5,10 +5,16 @@ import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { AppComponent } from './app.component';
+import { HeroComponent } from './hero/hero.component';
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroComponent,
+    AboutComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<div class="projects-content">
+    <h2>Projects</h2>
+    <div class="project" *ngFor="let project of projectsList">
+        <div class="project-info">
+            <h3>{{project.name}}</h3>
+            <p class="description">{{project.description}}</p>
+            <div class="project-techs">
+                <p *ngFor="let tech of project.tech">{{tech}}</p>
+            </div>
+            <div class="project-links">
+                <a>Code <fa-icon class="link-icon" [icon]="['fab', 'github']"></fa-icon></a>
+                <a>Demo</a>
+            </div>
+        </div>
+        <figure>
+            <img [src]="project.img" [alt]="project.name" />
+        </figure>
+    </div>
+</div>

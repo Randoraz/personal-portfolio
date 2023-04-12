@@ -1,5 +1,5 @@
 <header>
-  <p class="my-name">Raquel.dev</p>
+  <p class="my-name">Raquel</p>
   <nav>
     <a>Home</a>
     <a>About</a>
@@ -8,45 +8,13 @@
   </nav>
 </header>
 <section id="hero-section">
-  <div class="hero">
-    <div class="my-info">
-      <h1>Front-End Developer</h1>
-      <p>Hello! I'm Raquel Costa Freire. A Front-End Web Developer currently based in the province of Limburg, Belgium</p>
-      <div class="my-links-icons">
-        <a><fa-icon class="link-icon" [icon]="['fab', 'github']"></fa-icon></a>
-        <a><fa-icon class="link-icon" [icon]="['fab', 'linkedin']"></fa-icon></a>
-      </div>
-    </div>
-    <img class="my-img" src="../assets/images/Raquel Portrait 1280x1280 - Assinado.jpg" />
-  </div>
-  <div class="tech-stack">
-    <p>Tech Stack</p>
-    <img class="tech-icon" src="../assets/images/HTML5_Logo_256.png" />
-    <img class="tech-icon" src="../assets/images/css3-8-1175200.webp" />
-    <img class="tech-icon" src="../assets/images/javascript-2038874-1720087.webp" />
-    <img class="tech-icon" src="../assets/images/logo-react-256.png" />
-    <img class="tech-icon" src="../assets/images/redux-283024.webp" />
-  </div>
-  <div class="languages">
-    <p>Languages</p>
-    <img class="language-icon" src="../assets/images/Brazil-icon.png" />
-    <img class="language-icon" src="../assets/images/United-kingdom-icon.png" />
-    <img class="language-icon" src="../assets/images/Netherlands-icon.png" />
-    <img class="language-icon" src="../assets/images/Custom-Icon-Design-Round-World-Flags-Japan.512.png" />
-    <img class="language-icon" src="../assets/images/Germany-icon.png" />
-  </div>
+  <app-hero></app-hero>
 </section>
 <section id="about">
-  <h2>About Me</h2>
-  <h3>Junior Front-End Developer living in Belgium</h3>
-  <p>
-    I'm a brazilian biologist who found her second passion in programming. I started learning how to code years ago, but decided to pursue it
-    professionally when I came to live in Belgium. I have good skills in HTML, CSS, Javascript, React and Redux. I'm currently teaching myself
-    Typescript and Angular. I'm always interested in learning new technologies. 
-  </p>
+  <app-about></app-about>
 </section>
 <section id="projects">
-  
+  <app-projects [projectsList]="projects"></app-projects>
 </section>
 <footer id="contact">
 
