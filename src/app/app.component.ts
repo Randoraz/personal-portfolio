@@ -15,7 +15,7 @@ export class AppComponent {
       description: 'A Reddit client that receives posts from the Reddit API ' +
                    'and displays them. The user is able to choose a Subreddit, ' +
                    'search posts with keywords and see comments.',
-      img: '../assets/images/Projects/RandorazReddit.png',
+      img: 'assets/images/Projects/RandorazReddit.png',
       tech: ['React', 'Redux', 'CSS'],
       gitLink: 'https://github.com/Randoraz/randoraz_reddit',
       demoLink: 'https://randorazreddit.netlify.app/'
@@ -24,7 +24,7 @@ export class AppComponent {
       name: 'Atatakai Restaurant',
       description: 'A japanese restaurant website that allows users to check the menu and ' + 
                    'the address, make orders and reservations.',
-      img: '../assets/images/Projects/RestaurantApp.png',
+      img: 'assets/images/Projects/RestaurantApp.png',
       tech: ['React', 'Redux', 'CSS'],
       gitLink: 'https://github.com/Randoraz/RestaurantApp',
       demoLink: 'https://randoraz.github.io/RestaurantApp/'
@@ -33,7 +33,7 @@ export class AppComponent {
       name: 'Pathfinding Visualizer',
       description: 'A website that displays with CSS animations how the Dijkstra\'s algorithm finds the shortest ' +
                    'path between a start node and an end node in a grid',
-      img: '../assets/images/Projects/PathfindingVisualizer.png',
+      img: 'assets/images/Projects/PathfindingVisualizer.png',
       tech: ['React', 'CSS'],
       gitLink: 'https://github.com/Randoraz/pathfinding-visualizer',
       demoLink: 'https://randoraz.github.io/pathfinding-visualizer/'
