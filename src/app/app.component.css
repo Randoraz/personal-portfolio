@@ -72,3 +72,21 @@ footer > p {
         height: auto;
     }
 }
+
+@media only screen and (max-width: 510px) {
+    #hero-section, #about-section, #projects-section, #contact-section {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .my-name {
+        display: none;
+    }
+
+    nav {
+        margin: 0;
+        width: 100%;
+        justify-content: space-around;
+        gap: 0;
+    }
+}
