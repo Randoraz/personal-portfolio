@@ -1,3 +1,7 @@
+h2 {
+    padding: 1rem 0;
+}
+
 .project {
     display: flex;
     justify-content: center;
@@ -8,6 +12,8 @@
     gap: 5rem;
     align-items: center;
     border: 0.1rem solid black;
+    border-radius: 10px;
+    box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
 
 .project-info {
@@ -35,6 +41,8 @@
 .project-techs > p {
     border: 0.1rem solid black;
     padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0.1rem 0.1rem 0.2rem black;
 }
 
 .project-links {
@@ -50,8 +58,11 @@
 figure {
     width: 50rem;
     border: 0.1rem solid black;
+    border-radius: 10px;
+    box-shadow: 0.1rem 0.1rem 0.3rem black;
 }
 
 img {
     width: 100%;
+    border-radius: 10px;
 }

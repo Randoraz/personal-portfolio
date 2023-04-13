@@ -1,21 +1,25 @@
 <header>
   <p class="my-name">Raquel</p>
   <nav>
-    <a>Home</a>
-    <a>About</a>
-    <a>Projects</a>
-    <a>Contact</a>
+    <a href="#hero-section">Home</a>
+    <a href="#about-section">About</a>
+    <a href="#projects-section">Projects</a>
+    <a href="#contact-section">Contact</a>
   </nav>
 </header>
 <section id="hero-section">
   <app-hero></app-hero>
 </section>
-<section id="about">
+<section id="about-section">
   <app-about></app-about>
 </section>
-<section id="projects">
+<section id="projects-section">
   <app-projects [projectsList]="projects"></app-projects>
 </section>
-<footer id="contact">
-
+<section id="contact-section">
+  <app-contact></app-contact>
+</section>
+<footer>
+  <p>© Copyright - Raquel Costa Freire - 2023</p>
+  <p>All rights reserved. No reproduction without permission.</p>
 </footer>

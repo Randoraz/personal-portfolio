@@ -8,8 +8,8 @@
                 <p *ngFor="let tech of project.tech">{{tech}}</p>
             </div>
             <div class="project-links">
-                <a>Code <fa-icon class="link-icon" [icon]="['fab', 'github']"></fa-icon></a>
-                <a>Demo</a>
+                <a [href]="project.gitLink" target="_blank">Code <fa-icon class="link-icon" [icon]="['fab', 'github']"></fa-icon></a>
+                <a [href]="project.demoLink" target="_blank">Demo <fa-icon class="link-icon" [icon]="['fas', 'arrow-up-right-from-square']"></fa-icon></a>
             </div>
         </div>
         <figure>
