@@ -91,6 +91,10 @@ li {
 }
 
 @media only screen and (max-width: 768px) {
+    h1 {
+        margin: auto;
+    }
+
     .hero-main {
         flex-direction: column-reverse;
     }
@@ -130,5 +134,18 @@ li {
 
     .tech-stack, .languages {
         flex-direction: column;
+    }
+
+    .tech-stack > p, .languages > p {
+        padding-right: 0;
+        border-right: none;
+        padding-bottom: 1.5rem;
+        border-bottom: 0.2rem dashed var(--main-white);
+    }
+
+    .tech-logos, .language-flags {
+        padding-left: 0;
+        padding-top: 1rem;
+        display: flex;
     }
 }

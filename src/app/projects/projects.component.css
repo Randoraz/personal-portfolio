@@ -99,9 +99,9 @@ img {
 @media only screen and (max-width: 510px) {
     .project {
         flex-direction: column-reverse;
+        justify-content: space-evenly;
         height: fit-content;
         padding: 2rem;
-        gap: 3rem;
     }
 
     .project:last-child {
@@ -110,6 +110,8 @@ img {
 
     .project-info {
         width: 100%;
+        height: auto;
+        gap: 1rem;
         padding: 0;
     }
 
@@ -118,6 +120,7 @@ img {
     }
 
     .project-techs {
+        gap: 1rem;
         flex-wrap: wrap;
     }
 
