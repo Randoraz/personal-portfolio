@@ -22,7 +22,7 @@ export class AppComponent {
     },
     {
       name: 'Atatakai Restaurant',
-      description: 'A japanese restaurant website that allows users to check the menu and ' + 
+      description: 'A Japanese restaurant website that allows users to check the menu and ' + 
                    'the address, make orders and reservations.',
       img: 'assets/images/Projects/RestaurantApp.png',
       tech: ['React', 'Redux', 'CSS'],
@@ -39,4 +39,30 @@ export class AppComponent {
       demoLink: 'https://randoraz.github.io/pathfinding-visualizer/'
     },
   ];
+
+  hoverOverNameEffect() {
+    const name: HTMLHeadingElement | null = document.querySelector('.my-name');
+    const letters: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const originalNameString: string = 'RAQUEL';
+
+    if(name) {
+      let iterations: number = 0;
+
+      const interval = setInterval(() => {
+        name.innerText = name?.innerText.split('').map((letter, index) => {
+          if(letter === ' ' || index < iterations)
+            return originalNameString[index];
+          
+          const newLetter: string = letters[Math.floor(Math.random() * 26)];
+          return newLetter;
+        }).join('');
+
+        if(iterations >= originalNameString.length)
+          clearInterval(interval);
+
+        iterations += 1 / 3;
+      }, 50);
+      
+    }
+  }
 }

@@ -10,27 +10,79 @@
             <!-- <a><fa-icon class="link-icon" [icon]="['fab', 'linkedin']"></fa-icon></a> -->
           </div>
         </div>
-        <img class="my-img" src="assets/images/Raquel Portrait 1280x1280 - Assinado.jpg" />
+        <figure class="my-img-figure" (mouseenter)="onMouseEnterImg()" (mouseleave)="onMouseLeaveImg()">
+          <img class="my-img" [src]="portraitSrc" alt="Raquel Pixelart Portrait" />
+        </figure>
       </div>
     </div>
     <div class="tech-stack">
       <p>Tech Stack</p>
       <ul class="tech-logos">
-        <li><img class="tech-icon" src="assets/images/Logos/HTML5_Logo_256.png" /></li>
-        <li><img class="tech-icon" src="assets/images/Logos/css3-8-1175200.webp" /></li>
-        <li><img class="tech-icon" src="assets/images/Logos/javascript-2038874-1720087.webp" /></li>
-        <li><img class="tech-icon" src="assets/images/Logos/logo-react-256.png" /></li>
-        <li><img class="tech-icon" src="assets/images/Logos/redux-283024.webp" /></li>
+        <li>
+          <figure>
+            <img class="tech-icon" src="assets/images/Logos/HTML5_Logo_256.png" alt="HTML icon" />
+            <figcaption class="tech-figcaption">HTML</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="tech-icon" src="assets/images/Logos/css3-8-1175200.webp" alt="CSS icon" />
+            <figcaption class="tech-figcaption">CSS</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="tech-icon" src="assets/images/Logos/javascript-2038874-1720087.webp" alt="Javascript icon" />
+            <figcaption class="tech-figcaption">Javascript</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="tech-icon" src="assets/images/Logos/logo-react-256.png" alt="React icon" />
+            <figcaption class="tech-figcaption">React</figcaption>
+          </figure>
+          </li>
+        <li>
+          <figure>
+            <img class="tech-icon" src="assets/images/Logos/redux-283024.webp" alt="Redux icon" />
+            <figcaption class="tech-figcaption">Redux</figcaption>
+          </figure>
+        </li>
       </ul>
     </div>
     <div class="languages">
       <p>Languages</p>
       <ul class="language-flags">
-        <li><img class="language-icon" src="assets/images/Flags/Brazil-icon.png" /></li>
-        <li><img class="language-icon" src="assets/images/Flags/United-kingdom-icon.png" /></li>
-        <li><img class="language-icon" src="assets/images/Flags/Netherlands-icon.png" /></li>
-        <li><img class="language-icon" src="assets/images/Flags/Custom-Icon-Design-Round-World-Flags-Japan.512.png" /></li>
-        <li><img class="language-icon" src="assets/images/Flags/Germany-icon.png" /></li>
+        <li>
+          <figure>
+            <img class="language-icon" src="assets/images/Flags/Brazil-icon.png" alt="Brazilian Portuguese" />
+            <figcaption class="language-figcaption">Portuguese BR</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="language-icon" src="assets/images/Flags/United-kingdom-icon.png" alt="English" />
+            <figcaption class="language-figcaption">English</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="language-icon" src="assets/images/Flags/Netherlands-icon.png" alt="Dutch" />
+            <figcaption class="language-figcaption">Dutch</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="language-icon" src="assets/images/Flags/Custom-Icon-Design-Round-World-Flags-Japan.512.png" alt="Japanese" />
+            <figcaption class="language-figcaption">Japanese</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="language-icon" src="assets/images/Flags/Germany-icon.png" alt="German" />
+            <figcaption class="language-figcaption">German</figcaption>
+          </figure>
+        </li>
       </ul>
     </div>
 </div>
