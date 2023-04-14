@@ -1,7 +1,7 @@
 h1 {
     width: fit-content;
     padding-bottom: 1rem;
-    border-bottom: 0.3rem dashed black;
+    border-bottom: 0.3rem dashed var(--main-purple);
     text-align: center;
 }
 
@@ -55,14 +55,31 @@ li {
 }
 
 .tech-stack > p, .languages > p {
-    margin-right: 5rem;
+    padding-right: 2.5rem;
+    border-right: 0.2rem dashed var(--main-white);
 }
 
 .tech-logos, .language-flags {
+    padding-left: 2.5rem;
     display: flex;
 }
 
-.tech-icon, .language-icon {
+.tech-logos li {
+    background-color: var(--main-white);
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.language-icon {
     width: 5rem;
 }
 

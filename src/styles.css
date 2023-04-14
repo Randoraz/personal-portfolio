@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --main-black: hsl(240, 5%, 10%);
+    --alternative-black: hsl(240, 5%, 15%);
+    --dark-purple: hsl(270, 70%, 20%);
+    --main-purple: hsl(270, 70%, 60%);
+    --main-white: hsl(0, 0%, 90%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,29 +19,39 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: var(--main-black);
 }
 
 h1 {
     font-size: 5rem;
     font-family: 'Concert One', 'Lato', sans-serif;
+    color: var(--main-purple);
 }
 
 h2 {
     font-size: 4rem;
     font-family: 'Concert One', 'Lato', sans-serif;
+    color: var(--main-white);
+}
+
+h2:first-child {
+    color: var(--main-purple);
 }
 
 h3 {
     font-size: 3rem;
+    color: var(--main-white);
 }
 
-p, a {
+p {
     font-size: 3rem;
+    color: var(--main-white);
 }
 
 a {
+    font-size: 3rem;
+    color: var(--main-purple);
     text-decoration: none;
-    color: black;
 }
 
 img {

@@ -12,9 +12,9 @@ h2 {
     height: 50rem;
     gap: 5rem;
     align-items: center;
-    border: 0.1rem solid black;
+    border: 0.1rem solid var(--main-white);
     border-radius: 10px;
-    box-shadow: 0.2rem 0.2rem 0.5rem black;
+    box-shadow: 0.2rem 0.2rem 0.5rem var(--main-white);
 }
 
 .project-info {
@@ -40,10 +40,9 @@ h2 {
 }
 
 .project-techs > p {
-    border: 0.1rem solid black;
+    border: 0.1rem solid var(--main-white);
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0.1rem 0.1rem 0.2rem black;
 }
 
 .project-links {
@@ -54,13 +53,22 @@ h2 {
 
 .project-links > a {
     margin: 0 2rem;
+    border: 0.1rem solid var(--main-purple);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0.1rem 0.1rem 0.3rem var(--main-purple);
+}
+
+.project-links > a:hover {
+    box-shadow: none;
+    transform: translate(0.2rem, 0.2rem);
 }
 
 figure {
     width: 50rem;
-    border: 0.1rem solid black;
+    border: 0.1rem solid var(--main-white);
     border-radius: 10px;
-    box-shadow: 0.1rem 0.1rem 0.3rem black;
+    box-shadow: 0.1rem 0.1rem 0.5rem var(--main-white);
 }
 
 img {
@@ -94,6 +102,10 @@ img {
         height: fit-content;
         padding: 2rem;
         gap: 3rem;
+    }
+
+    .project:last-child {
+        margin-bottom: 0;
     }
 
     .project-info {

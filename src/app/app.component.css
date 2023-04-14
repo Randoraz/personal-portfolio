@@ -6,9 +6,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
-    box-shadow: 0.2rem 0 0.5rem black;
-    background-color: white;
+    border-bottom: 0.1rem solid var(--main-purple);
+    box-shadow: 0.2rem 0 0.5rem var(--main-purple);
+    background-color: var(--dark-purple);
 }
 
 nav {
@@ -21,6 +21,10 @@ nav {
     align-items: center;
     position: absolute;
     right: 0;
+}
+
+nav a {
+    color: var(--main-white);
 }
 
 .my-name {
@@ -47,6 +51,8 @@ section {
     padding: 5rem;
     margin-bottom: 5rem;
     text-align: justify;
+    background-color: var(--alternative-black);
+    border-radius: 10px;
 }
 
 #projects-section {
@@ -55,12 +61,15 @@ section {
 
 #contact-section {
     margin-bottom: 5rem;
+    background-color: var(--alternative-black);
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
     padding: 5rem;
-    border-top: 0.1rem solid black;
+    border-top: 0.1rem solid var(--main-white);
+    box-shadow: 0.2rem 0 0.5rem var(--main-white);
 }
 
 footer > p {
@@ -71,12 +80,21 @@ footer > p {
     #hero-section {
         height: auto;
     }
+
+    #about-section, #contact-section {
+        border-radius: 0;
+    }
 }
 
 @media only screen and (max-width: 510px) {
     #hero-section, #about-section, #projects-section, #contact-section {
         width: 100%;
-        padding: 2rem;
+        padding: 0 2rem;
+        margin-bottom: 5rem;
+    }
+
+    #about-section {
+        padding-bottom: 2rem;
     }
 
     .my-name {

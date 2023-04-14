@@ -32,7 +32,7 @@ export class AppComponent {
     {
       name: 'Pathfinding Visualizer',
       description: 'A website that displays with CSS animations how the Dijkstra\'s algorithm finds the shortest ' +
-                   'path between a start node and an end node in a grid',
+                   'path between the start and end nodes in a grid',
       img: 'assets/images/Projects/PathfindingVisualizer.png',
       tech: ['React', 'CSS'],
       gitLink: 'https://github.com/Randoraz/pathfinding-visualizer',
