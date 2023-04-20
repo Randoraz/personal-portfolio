@@ -58,6 +58,29 @@ img {
     display: block;
 }
 
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--main-white); 
+    box-shadow: inset 0 0 5px grey;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-purple);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-purple); 
+  }
+
 @media only screen and (max-width: 510px) {
     h1 {
         font-size: 4rem;
