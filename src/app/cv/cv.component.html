@@ -38,12 +38,23 @@
 
     <div class="certificates-div">
         <h3>Certificates</h3>
-        <h4>Dutch Course Level B1 at PCVO Modern Talen Hasselt <span>(Belgium - 2023)</span></h4>
-        <h4>N2 Japanese Course at ISI Language School <span>(Japan - 2021)</span></h4>
-        <h4>Perfect Attendence for 1 year at ISI Language School <span>(Japan - 2021)</span></h4>
-        <h4>Intermediate Japanese Course at Poliglota Institute <span>(Brazil - 2019)</span></h4>
-        <h4>Basic German Course at Poliglota Institute <span>(Brazil - 2018)</span></h4>
-        <h4>onSET-Zertifikat - German CEFR Level B1 <span>(Brazil - 2017)</span></h4>
-        <h4>Intermediate English Course at Poliglota Institute <span>(Brazil - 2015)</span></h4>
+        <div class="education-certificates">
+            <h4>Education</h4>
+        </div>
+        <div class="language-certificates">
+            <div class="language-div-header">
+                <h4>Languages</h4>
+                <button (click)="handleShow($event, languagesUl)"><fa-icon [icon]="['fas', 'angles-down']"></fa-icon> See more</button>
+            </div>
+            <ul #languagesUl>
+                <li>Dutch Course Level B1 at PCVO Modern Talen Hasselt <span>(Belgium - 2023)</span></li>
+                <li>N2 Japanese Course at ISI Language School <span>(Japan - 2021)</span></li>
+                <li>Perfect Attendence for 1 year at ISI Language School <span>(Japan - 2021)</span></li>
+                <li>Intermediate Japanese Course at Poliglota Institute <span>(Brazil - 2019)</span></li>
+                <li>Basic German Course at Poliglota Institute <span>(Brazil - 2018)</span></li>
+                <li>onSET-Zertifikat - German CEFR Level B1 <span>(Brazil - 2017)</span></li>
+                <li>Intermediate English Course at Poliglota Institute <span>(Brazil - 2015)</span></li>
+            </ul>
+        </div>
     </div>
 </div>

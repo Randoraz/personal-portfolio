@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { Project } from './project';
 
 @Component({
@@ -7,6 +7,8 @@ import { Project } from './project';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @ViewChild('header') navBar!: ElementRef<HTMLElement>;
+  
   title = 'personal-portfolio';
   
   projects: Project[] = [
@@ -40,8 +42,8 @@ export class AppComponent {
     },
   ];
 
-  hoverOverNameEffect() {
-    const name: HTMLHeadingElement | null = document.querySelector('.my-name');
+  hoverOverNameEffect(event: Event) {
+    const name: HTMLHeadingElement = event.target as HTMLHeadingElement;
     const letters: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const originalNameString: string = 'RAQUEL';
 
@@ -49,7 +51,7 @@ export class AppComponent {
       let iterations: number = 0;
 
       const interval = setInterval(() => {
-        name.innerText = name?.innerText.split('').map((letter, index) => {
+        name.innerText = name.innerText.split('').map((letter, index) => {
           if(letter === ' ' || index < iterations)
             return originalNameString[index];
           
@@ -63,6 +65,15 @@ export class AppComponent {
         iterations += 1 / 3;
       }, 50);
       
+    }
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll() {
+    if(window.scrollY) {
+      this.navBar.nativeElement.classList.add('header-after-scrolling');
+    } else {
+      this.navBar.nativeElement.classList.remove('header-after-scrolling');
     }
   }
 }

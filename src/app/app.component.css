@@ -10,6 +10,7 @@ header {
     box-shadow: 0.2rem 0 0.5rem var(--main-purple);
     background-color: var(--dark-purple);
     z-index: 1;
+    transition: 500ms ease-out;
 }
 
 nav {
@@ -26,6 +27,29 @@ nav {
 
 nav a {
     color: var(--main-white);
+    position: relative;
+}
+
+nav a::before {
+    content: '';
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 0;
+    height: 90%;
+    background-color: var(--main-purple);
+    z-index: -1;
+    transition: 700ms width ease-out;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.header-after-scrolling {
+    background-color: var(--main-black);
+    border-bottom: 0.1rem solid var(--main-white);
+    box-shadow: 0.2rem 0 0.5rem var(--main-white);
 }
 
 footer a {

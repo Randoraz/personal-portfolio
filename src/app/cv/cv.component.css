@@ -25,3 +25,35 @@
     p, .certificates-div span {
         font-size: 1.6rem;
     }
+
+    ul {
+        height: auto;
+        width: auto;
+        overflow: hidden;
+        max-height: 0;
+        transition: 700ms ease-out;
+    }
+
+    li {
+        list-style: none;
+        font-size: 2rem;
+        color: var(--main-white);
+        width: fit-content;
+    }
+
+    .language-div-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .language-certificates {
+        border: 0.1rem solid var(--main-white);
+        border-radius: 10px;
+        padding: 1rem;
+        width: fit-content;
+    }
+
+    .language-certificates h4 {
+        margin-top: 0;
+    }
