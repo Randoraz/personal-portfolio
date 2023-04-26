@@ -1,6 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { Icon, icon } from '@fortawesome/fontawesome-svg-core';
-import { faAnglesDown, faAnglesUp } from '@fortawesome/free-solid-svg-icons';
+import { Component } from '@angular/core';
+import { CertificateList } from '../certificate-list';
 
 @Component({
   selector: 'app-cv',
@@ -8,27 +7,59 @@ import { faAnglesDown, faAnglesUp } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./cv.component.css']
 })
 export class CvComponent {
-  @ViewChild('languagesUl') languagesUl!: ElementRef<HTMLUListElement>;
-  // @ViewChild('educationUl') educationUl!: ElementRef<HTMLUListElement>;
+  educationCertificateList: CertificateList = {
+    name: 'Education',
+    certificates: [
+      {
+        name: 'Front-End Engineer Career Path by Codecademy',
+        info: '(Online - 2023)'
+      },
+      {
+        name: 'Typescript Course by Codecademy',
+        info: '(Online - 2023)'
+      },
+      {
+        name: 'Javascript Course by Codecademy',
+        info: '(Online - 2023)'
+      },
+      {
+        name: 'Responsive Web Design Certification by FreeCodeCamp',
+        info: '(Online - 2022)'
+      }
+    ] 
+  }
 
-  languagesIsShowing: boolean = false;
-  // educationIsShowing: boolean = false;
-
-  anglesDown: string = icon(faAnglesDown).html[0];
-  anglesUp: string = icon(faAnglesUp).html[0];
-
-  handleShow(event: Event, ulElement: HTMLUListElement) {
-    const button = event.target as HTMLButtonElement;
-    if(this.languagesIsShowing) {
-      ulElement.style.maxHeight = '0';
-      ulElement.style.marginTop = '0';
-      button.innerHTML = `${this.anglesDown} See more`;
-      this.languagesIsShowing = false;
-    } else {
-      ulElement.style.maxHeight = '30rem';
-      ulElement.style.marginTop = '1rem';
-      button.innerHTML = `${this.anglesUp} See less`;
-      this.languagesIsShowing = true;
-    }
+  languageCertificateList: CertificateList = {
+    name: 'Language',
+    certificates: [
+      {
+        name: 'Dutch Course Level B1 at PCVO Modern Talen Hasselt',
+        info: '(Belgium - 2023)'
+      },
+      {
+        name: 'N2 Japanese Course at ISI Language School',
+        info: '(Japan - 2021)'
+      },
+      {
+        name: 'Perfect Attendence for 1 year at ISI Language School',
+        info: '(Japan - 2021)'
+      },
+      {
+        name: 'Intermediate Japanese Course at Poliglota Institute',
+        info: '(Brazil - 2019)'
+      },
+      {
+        name: 'Basic German Course at Poliglota Institute',
+        info: '(Brazil - 2018)'
+      },
+      {
+        name: 'onSET-Zertifikat - German CEFR Level B1',
+        info: '(Brazil - 2017)'
+      },
+      {
+        name: 'Intermediate English Course at Poliglota Institute',
+        info: '(Brazil - 2015)'
+      },
+    ]
   }
 }

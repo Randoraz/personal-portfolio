@@ -1,59 +1,55 @@
-    .experience-div, .education-div, .certificates-div {
-        margin-top: 3rem;
-    }
+.cv-content {
+    text-align: justify;
+}
 
-    h3 {
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
-        border-bottom: 0.2rem dashed var(--main-white);
+.experience-div, .education-div, .certificates-div {
+    margin-top: 3rem;
+}
+
+.experience-info, .education-info {
+    padding: 1rem;
+}
+
+.experience-info:nth-child(2n), .education-info:nth-child(2n) {
+    background-color: var(--alternative-black);
+    border-radius: 10px;
+}
+
+h3 {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.2rem dashed var(--main-white);
+}
+
+h4 {
+    font-size: 2.4rem;
+    color: var(--main-white);
+}
+
+.certificates-div h4 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.experience-info, .education-info {
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.certificates-div > .certificate-list:not(:last-child) {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 510px) {
+    .cv-content {
+        text-align: center;
     }
 
     h4 {
-        font-size: 2.4rem;
-        color: var(--main-white);
-    }
-
-    .certificates-div h4 {
         font-size: 2rem;
-        margin-top: 1rem;
     }
-
-    .experience-info, .education-info {
-        margin-top: 1rem;
-    }
-
-    p, .certificates-div span {
-        font-size: 1.6rem;
-    }
-
-    ul {
-        height: auto;
-        width: auto;
-        overflow: hidden;
-        max-height: 0;
-        transition: 700ms ease-out;
-    }
-
-    li {
-        list-style: none;
-        font-size: 2rem;
-        color: var(--main-white);
-        width: fit-content;
-    }
-
-    .language-div-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .language-certificates {
-        border: 0.1rem solid var(--main-white);
-        border-radius: 10px;
-        padding: 1rem;
-        width: fit-content;
-    }
-
-    .language-certificates h4 {
-        margin-top: 0;
-    }
+}

@@ -1,0 +1,64 @@
+.certificates {
+    border: 0.1rem solid var(--main-white);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.certificates-div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4 {
+    margin-top: 0;
+    font-size: 2.4rem;
+    color: var(--main-white);
+}
+
+ul {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    max-height: 0;
+    transition: 700ms ease-out;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    color: var(--main-white);
+    width: fit-content;
+    padding: 1rem;
+}
+
+li:nth-child(2n - 1) {
+    background-color: var(--alternative-black);
+    border-radius: 10px;
+}
+
+li > span {
+    font-size: 1.6rem;
+}
+
+button {
+    width: 12rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: var(--main-black);
+    color: var(--main-white);
+    border: 0.1rem solid var(--main-white);
+    border-radius: 10px;
+    box-shadow: 0.1rem 0.1rem 0.3rem var(--main-white);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translate(0.2rem, 0.2rem);
+    box-shadow: none;
+}
+
+.arrow-icon {
+    color: var(--main-purple);
+}

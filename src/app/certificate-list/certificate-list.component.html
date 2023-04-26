@@ -1,0 +1,9 @@
+<div class="certificates">
+    <div class="certificates-div-header">
+        <h4>{{certificateList.name}}</h4>
+        <button (click)="handleClick()"><fa-icon class="arrow-icon" [icon]="currentIcon" #arrowIcon></fa-icon> {{buttonMessage}}</button>
+    </div>
+    <ul #list>
+        <li *ngFor="let certificate of certificateList.certificates">{{certificate.name}} <span>{{certificate.info}}</span></li>
+    </ul>
+</div>

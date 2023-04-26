@@ -38,23 +38,7 @@
 
     <div class="certificates-div">
         <h3>Certificates</h3>
-        <div class="education-certificates">
-            <h4>Education</h4>
-        </div>
-        <div class="language-certificates">
-            <div class="language-div-header">
-                <h4>Languages</h4>
-                <button (click)="handleShow($event, languagesUl)"><fa-icon [icon]="['fas', 'angles-down']"></fa-icon> See more</button>
-            </div>
-            <ul #languagesUl>
-                <li>Dutch Course Level B1 at PCVO Modern Talen Hasselt <span>(Belgium - 2023)</span></li>
-                <li>N2 Japanese Course at ISI Language School <span>(Japan - 2021)</span></li>
-                <li>Perfect Attendence for 1 year at ISI Language School <span>(Japan - 2021)</span></li>
-                <li>Intermediate Japanese Course at Poliglota Institute <span>(Brazil - 2019)</span></li>
-                <li>Basic German Course at Poliglota Institute <span>(Brazil - 2018)</span></li>
-                <li>onSET-Zertifikat - German CEFR Level B1 <span>(Brazil - 2017)</span></li>
-                <li>Intermediate English Course at Poliglota Institute <span>(Brazil - 2015)</span></li>
-            </ul>
-        </div>
+        <app-certificate-list class="certificate-list" [certificateList]="educationCertificateList"></app-certificate-list>
+        <app-certificate-list class="certificate-list" [certificateList]="languageCertificateList"></app-certificate-list>
     </div>
 </div>

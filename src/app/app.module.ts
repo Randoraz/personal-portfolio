@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { CvComponent } from './cv/cv.component';
+import { CertificateListComponent } from './certificate-list/certificate-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CvComponent } from './cv/cv.component';
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    CvComponent
+    CvComponent,
+    CertificateListComponent,
   ],
   imports: [
     BrowserModule,
