@@ -33,7 +33,7 @@ export class CertificateListComponent {
       this.currentIcon = ['fas', 'angles-down'];
       this.isShowing = false;
     } else {
-      this.list.nativeElement.style.maxHeight = '50rem';
+      this.list.nativeElement.style.maxHeight = '100rem';
       this.list.nativeElement.style.marginTop = '1rem';
       this.buttonMessage = 'See less';
       this.currentIcon = ['fas', 'angles-up'];

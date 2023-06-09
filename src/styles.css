@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    --main-black: hsl(240, 5%, 10%);
-    --alternative-black: hsl(240, 5%, 15%);
-    --dark-purple: hsl(270, 70%, 20%);
-    --main-purple: hsl(270, 70%, 60%);
-    --main-white: hsl(0, 0%, 90%);
+    --main-black: #18181b;
+    --alternative-black: #242428;
+    --dark-purple: #330f57;
+    --main-purple: #9952e0;
+    --main-white: #e6e6e6;
 }
 
 * {
