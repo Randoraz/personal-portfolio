@@ -181,14 +181,21 @@ figure:hover figcaption {
     }
 
     .tech-logos, .language-flags {
-        padding-left: 0;
-        padding-top: 1rem;
+        padding: 1rem 1rem 0;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .tech-figcaption {
         top: auto;
         bottom: 0;
         transform: translate(-50%, 125%);
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .tech-logos, .language-flags {
+        max-width: 30rem;
     }
 }
